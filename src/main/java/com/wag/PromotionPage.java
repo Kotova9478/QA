@@ -105,6 +105,8 @@ public class PromotionPage extends BasePage {
         String result = nextButton.getText();
 
         return result;
+
+        //Sasha is magic!
     }
 }
 
