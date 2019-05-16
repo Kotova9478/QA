@@ -14,12 +14,13 @@ public class HomePage extends BasePage {
     @FindBy(css = ".sc-bdVaJa.sc-bwzfXH.jUXfpw button p")
     private WebElement walkFreeButton;
 
-
    // public void clickWalkFreeButton(){
        // walkFreeButton.click();
 
     public PromotionPage clickWalkFreeButton(){
+
         wait.until(ExpectedConditions.elementToBeClickable(walkFreeButton));
+
         walkFreeButton.click();
         return new PromotionPage(driver);
 
