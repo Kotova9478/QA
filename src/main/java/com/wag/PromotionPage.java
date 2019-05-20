@@ -42,6 +42,11 @@ public class PromotionPage extends BasePage {
     @FindBy(css = ".sc-bdVaJa.sc-gZMcBi.giglCC")
     private List<WebElement> errorFilds;
 
+    @FindBy(css = ".sc-bdVaJa.sc-gZMcBi.giglCC")
+    private WebElement incorrectMailField;
+
+   // @FindBy(css = "")
+   // private WebElement loginButton;
 
     public void inputEmailField(String email) {
 
@@ -129,9 +134,14 @@ public class PromotionPage extends BasePage {
         String error3 = errorFilds.get(3).getText();
         return error3;
         }
-
-
-
+        //public void inputWrongEmail(String emailWrong){
+       // emailField.sendKeys(emailWrong);
+       // }
+       // public void inputWrongPassword(String passwordWrong){
+       // passwordField.sendKeys(passwordWrong);
+       // }
+       // public String clickLoginButton(){
+       // }
 
         public String cklickNextButton(){
         nextButton.click();
@@ -139,6 +149,10 @@ public class PromotionPage extends BasePage {
         String result = nextButton.getText();
 
         return result;
+
+
+
+
 
         //Sasha is magic!
     }

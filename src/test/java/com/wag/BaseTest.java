@@ -16,6 +16,8 @@ public class BaseTest {
 
     protected WebDriverWait wait;
 
+    protected UserWalker userWalker;
+
     @Before
     public void setDrivver(){
 
@@ -32,6 +34,8 @@ public class BaseTest {
         homePage = new HomePage(driver);
 
         wait = new WebDriverWait(driver,10);
+
+        userWalker = new UserWalker();
     }
 
     @After

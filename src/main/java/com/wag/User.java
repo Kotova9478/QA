@@ -7,6 +7,7 @@ public class User {
     private String email;
     private String password;
     private String phoneNumber;
+    private String incorrectEmail;
 
     public User(){
         firstName = "Ivan";
@@ -14,6 +15,7 @@ public class User {
         email = "my@gmail.com";
         password = "123";
         phoneNumber = "1234567890";
+        incorrectEmail = "323";
     }
 
     public String getFirstName() {
@@ -33,5 +35,9 @@ public class User {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public String getIncorrectEmail() {
+        return incorrectEmail;
     }
 }
